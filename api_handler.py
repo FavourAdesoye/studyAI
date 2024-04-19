@@ -1,13 +1,11 @@
 from flask import Flask, jsonify
-import api_handler  # Import the file containing get_api_data
+import api_handler #test
 
-app = Flask(__name__)
+app = Flask(__name__) #test
 
-@app.route('/api/get-data')
+@app.route('/api/get-data') #test
 def get_data():
-    # Replace with your backend logic (call the Python function to fetch data)
-    api_data = api_handler.get_api_data("https://blackboard.vsu.edu/webapps/calendar/viewPersonal")  # Use the imported function
-    return jsonify(api_data)
+    api_data = api_handler.get_api_data("https://blackboard.vsu.edu/webapps/calendar/viewPersonal")
 
-if __name__ == '__main__':
-    app.run(debug=True)  # Set debug=False for production
+if __name__ == '__main__': #test
+    app.run(debug=True)

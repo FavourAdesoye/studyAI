@@ -1,15 +1,6 @@
 import requests
 
 def get_api_data(url, params=None):
-    """Fetches data from the specified API URL with optional parameters.
-
-    Args:
-        url (str): The API endpoint URL.
-        params (dict, optional): A dictionary of parameters to send. Defaults to None.
-
-    Returns:
-        dict or str: The parsed JSON response or error message if unsuccessful.
-    """
     try:
         response = requests.get(url, params=params)
         response.raise_for_status()  # Raise an exception for non-2xx status codes

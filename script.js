@@ -1,5 +1,5 @@
 const dataContainer = document.getElementById('data-container');
-
+//test
 async function fetchData() {
     try {
         const response = await fetch('/api/get-data');  // Replace with your actual route
@@ -11,4 +11,4 @@ async function fetchData() {
     }
 }
 
-fetchData();
+fetchData(); //test
